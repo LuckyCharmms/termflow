@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TermFlow - усі дедлайни в одному списку</title>
+<meta name="description" content="TermFlow збирає дедлайни з Classroom і Moodle в один список і пише, коли викладач змінив дату. Ранній доступ для студентів.">
+<style>
+:root{--ac:#2F5D8C;--ac2:#244a70;--bg:#ffffff;--soft:#F1F5F9;--tx:#1d2733;--mu:#5b6775}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--tx);background:var(--bg);line-height:1.55}
+.w{max-width:880px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+section.alt{background:var(--soft)}
+h1{font-size:2.3rem;line-height:1.2;margin:0 0 16px}
+h2{font-size:1.6rem;margin:0 0 20px}
+p{margin:0 0 14px}
+.sub{font-size:1.15rem;color:var(--mu);max-width:640px}
+.btn{display:inline-block;background:var(--ac);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:10px;font-size:1.05rem}
+.btn:hover{background:var(--ac2)}
+.brand{font-weight:700;color:var(--ac);padding:20px 0 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #d7e0ea;border-radius:12px;padding:18px}
+.card b{display:block;margin-bottom:6px}
+.num{font-size:2rem;font-weight:700;color:var(--ac)}
+ol.steps{padding-left:20px}ol.steps li{margin-bottom:10px}
+details{background:#fff;border:1px solid #d7e0ea;border-radius:10px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+blockquote{margin:0;padding:12px 18px;border-left:4px solid var(--ac);background:#fff}
+.note{font-size:.9rem;color:var(--mu)}
+footer{padding:28px 0;color:var(--mu);font-size:.9rem}
+@media(max-width:560px){h1{font-size:1.8rem}section{padding:40px 0}}
+</style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V8R62J1ZGS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-V8R62J1ZGS');
+</script>
+<!-- Microsoft Clarity -->
+<script>
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zj3n430jcv");
+</script>
+</head>
+<body>
+
+<section id="hero">
+ <div class="w">
+  <div class="brand">TermFlow</div>
+  <h1>Усі дедлайни в одному списку. Нічого вводити не треба.</h1>
+  <p class="sub">TermFlow збирає лабораторні, МКР і заліки з Google Classroom і Moodle, нагадує в Telegram і одразу пише, якщо викладач змінив дату.</p>
+  <p>Для студентів українських ЗВО, починаємо з КПІ.</p>
+  <a class="btn cta" data-loc="hero" href="https://docs.google.com/forms/d/e/1FAIpQLScrKjfEOsw9OwSkIMbzbyjKU7Eb02lzionRoy9sw8QAvvVFaA/viewform" target="_blank" rel="noopener">Хочу ранній доступ</a>
+ </div>
+</section>
+
+<section class="alt" id="problem">
+ <div class="w">
+  <h2>Знайомо?</h2>
+  <ul>
+   <li>Нове завдання з'явилось у Classroom, а про дату написали в чаті групи, де її вже змило мемами.</li>
+   <li>Ви домовились про одну дату, а викладач потім змінив її в Moodle, і ви про це не дізнались.</li>
+   <li>Календар пробували, але кинули: дати треба вписувати самому, а це ще одна справа.</li>
+  </ul>
+  <p>Робота виконана, а бали втрачені, бо дату переплутали. З такою проблемою стикаються 82% із 22 студентів, яких ми опитали.</p>
+ </div>
+</section>
+
+<section id="solution">
+ <div class="w">
+  <h2>Що робить TermFlow</h2>
+  <div class="cards">
+   <div class="card"><b>Збирає сам</b>Дедлайни з Classroom і Moodle потрапляють в один список «сьогодні, тиждень, далі». Вписувати нічого не потрібно.</div>
+   <div class="card"><b>Нагадує там, де ви є</b>Нагадування за день і за годину приходять у Telegram.</div>
+   <div class="card"><b>Каже, що змінилось</b>Якщо викладач переніс дату, ви побачите «було» і «стало» одразу.</div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="proof">
+ <div class="w">
+  <h2>Що кажуть студенти</h2>
+  <p>Це не відгуки користувачів: продукт ще не готовий. Це результати нашого опитування й розмов зі студентами в листопаді 2026 року.</p>
+  <div class="cards">
+   <div class="card"><div class="num">82%</div>із 22 опитаних хоча б раз за семестр пропускали дедлайн або здавали пізніше</div>
+   <div class="card"><div class="num">3 з 3</div>студентів, з якими ми говорили, кидали календарі й планувальники через ручне вписування дат</div>
+  </div>
+  <br>
+  <blockquote>«Саму роботу я виконав, але переплутав дату здачі.»<br><span class="note">студент 1 курсу, комп'ютерні науки</span></blockquote>
+ </div>
+</section>
+
+<section id="how">
+ <div class="w">
+  <h2>Як це працюватиме</h2>
+  <ol class="steps">
+   <li>Ви входите і підключаєте Google Classroom або Moodle.</li>
+   <li>TermFlow сам знаходить завдання з датами й складає список.</li>
+   <li>Ви отримуєте нагадування в Telegram за день і за годину.</li>
+   <li>Якщо дату змінили, приходить повідомлення «було, стало».</li>
+  </ol>
+  <p class="note">Зараз застосунок у розробці. Ми збираємо список тих, кому це потрібно, щоб зрозуміти, з чого починати.</p>
+ </div>
+</section>
+
+<section class="alt" id="join">
+ <div class="w">
+  <h2>Отримайте ранній доступ</h2>
+  <p>Залиште email та ім'я. Ми напишемо, коли з'явиться перша версія, і більше нічого не розсилатимемо. Базова версія буде безкоштовною.</p>
+  <a class="btn cta" data-loc="bottom" href="https://docs.google.com/forms/d/e/1FAIpQLScrKjfEOsw9OwSkIMbzbyjKU7Eb02lzionRoy9sw8QAvvVFaA/viewform" target="_blank" rel="noopener">Хочу ранній доступ</a>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="w">
+  <h2>Питання</h2>
+  <details><summary>Це вже працює?</summary><p>Ні. Це сторінка раннього доступу: ми перевіряємо, чи потрібен такий застосунок, і збираємо тих, хто хоче його спробувати.</p></details>
+  <details><summary>Скільки це коштуватиме?</summary><p>Базова версія з автозбором і нагадуваннями має бути безкоштовною. Платні функції для тих, хто поєднує навчання з роботою, ми ще обмірковуємо, ціна не визначена.</p></details>
+  <details><summary>Чи просите ви пароль від Moodle?</summary><p>Зараз ми збираємо лише email та ім'я. Як саме підключатиметься Moodle, ми ще вибираємо, і пароль від нього точно не потрібен для цієї форми.</p></details>
+  <details><summary>Для яких університетів?</summary><p>Починаємо зі студентів КПІ. Якщо ви з іншого ЗВО, теж залишайте заявку: це допоможе зрозуміти, куди рухатись далі.</p></details>
+ </div>
+</section>
+
+<footer><div class="w">TermFlow, студентський проєкт, 2026. Навчальна практична робота, КПІ ім. Ігоря Сікорського.</div></footer>
+
+<script>
+document.querySelectorAll('.cta').forEach(function(a){
+  a.addEventListener('click',function(){
+    var loc=a.getAttribute('data-loc');
+    try{gtag('event','CTA_click',{cta_location:loc});}catch(e){}
+    try{clarity('event','CTA_click');clarity('set','cta_location',loc);}catch(e){}
+  });
+});
+</script>
+</body>
+</html>
